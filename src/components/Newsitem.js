@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
-export class Newsitem extends Component {
+const Newsitem =(props)=> {
   
-  render() {
-    let{title,description,imageurl,newsurl,author,published,source}=this.props;
+    let{title,description,imageurl,newsurl,author,published,source}=props;
     return (
 
 
@@ -23,7 +22,7 @@ export class Newsitem extends Component {
       </div>
       
     )
-  }
+  
 }
-// toGMTString() it conver time to gmt format
+// toGMTString() it convert time to gmt format
 export default Newsitem
